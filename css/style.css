@@ -1,0 +1,397 @@
+.post {
+  margin-top: 50px;
+}
+
+.pp {
+  border-radius: 50%;
+  height: 44px;
+  width: 44px;
+  object-fit: cover;
+  background: transparent;
+  padding: 1px;
+  border: 1px solid #000000;
+}
+
+.postfont {
+  font-weight: bold;
+  color: #000;
+  text-decoration: none !important;
+}
+
+.postusername {
+  text-decoration: none;
+  color: #0000006e;
+  font-style: italic;
+}
+
+.singlepost {
+  padding: 10px;
+}
+
+.twopost {
+  margin-bottom: 20px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.postphoto {
+  width: -webkit-fill-available;
+  object-fit: cover;
+  background: transparent;
+  padding: 1px;
+  border: 1px solid #000000;
+}
+
+.trend {
+  font-weight: bold;
+  background: #8080801a;
+  padding: 10px;
+  border-radius: 15px;
+  margin-bottom: 10px;
+}
+
+.trendnumber {
+  font-size: 12px;
+  font-weight: lighter;
+}
+
+.neokusam {
+  width: 65px;
+}
+
+.neokusamfont {
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+.footer {
+  font-size: 12px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #000;
+}
+
+.footertwo {
+  margin-top: 5px;
+  font-weight: lighter;
+}
+
+.menu {
+  margin-right: 5px;
+}
+
+.menu:hover {
+  background-color: rgba(171, 171, 171, 0.123);
+  border: 1px rgba(171, 171, 171, 0.123);
+  border-radius: 5px;
+}
+
+.hash {
+  background-color: #8080801a;
+  color: #000;
+  text-decoration: underline;
+  font-weight: bold;
+  margin-left: 15px;
+  width: auto;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.cover {
+  width: -webkit-fill-available;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.profilepp {
+  -webkit-transform: translate(0px, -100px);
+  width: 150px;
+  border-radius: 87px;
+  border: 5px solid #ffffffc7;
+}
+
+.ust {
+  height: 300px;
+}
+
+.ustyazi {
+  font-weight: bold;
+}
+
+.book {
+  width: 150px;
+  height: 200px;
+  margin: auto;
+}
+
+.okur {
+  background-color: #8080801a;
+  padding: 7px;
+  width: 20%;
+  border-radius: 15px;
+  text-align: center;
+  margin-right: 20px;
+}
+
+.searchbook {
+  border-radius: 12%;
+  height: 100px;
+  width: 75px;
+  object-fit: cover;
+  background: transparent;
+  padding: 1px;
+  border: 1px solid #000000;
+}
+
+.activated {
+  background-color: #000000;
+  border-color: #000000;
+  z-index: 2;
+  color: var(--bs-list-group-active-color);
+}
+
+.verified {
+  background: none !important;
+  border: none !important;
+  padding: 0px !important;
+}
+
+.postset {
+  background: none;
+  border: none;
+  color: black;
+}
+
+/* post foto kısmı */
+
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {
+  opacity: 0.7;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9);
+  /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content,
+#caption {
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {
+    -webkit-transform: scale(0)
+  }
+
+  to {
+    -webkit-transform: scale(1)
+  }
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0)
+  }
+
+  to {
+    transform: scale(1)
+  }
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px) {
+  .modal-content {
+    width: 100%;
+  }
+}
+
+/* post foto kısmı */
+
+
+/* loader */
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 50px;
+  height: 50px;
+  margin: -76px 0 0 -76px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #fff;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s;
+  overflow-x: hidden;
+}
+
+@-webkit-keyframes animatebottom {
+  from {
+    bottom: -100px;
+    opacity: 0
+  }
+
+  to {
+    bottom: 0px;
+    opacity: 1
+  }
+}
+
+@keyframes animatebottom {
+  from {
+    bottom: -100px;
+    opacity: 0
+  }
+
+  to {
+    bottom: 0;
+    opacity: 1
+  }
+}
+
+#myDiv {
+  display: none;
+  text-align: center;
+}
+
+/*mobile */
+.mobile-nav {
+  background-color: #f8f9fa;
+  position: fixed;
+  bottom: 0;
+  height: 65px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  z-index: 1;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.bloc-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  -webkit-text-stroke: 1px;
+}
+
+.bloc-icon img {
+  width: 30px;
+}
+
+@media screen and (min-width: 600px) {
+  .mobile-nav {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .nomobile {
+    visibility: hidden;
+    clear: both;
+    float: right;
+    margin: 5px auto;
+    width: 22%;
+    height: auto;
+    display: none;
+  }
+}
